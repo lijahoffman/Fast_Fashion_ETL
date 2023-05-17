@@ -1,10 +1,9 @@
 # Fast Fashion ETL 
 
 ## Summary 
-The following is an extension of my contribution to the project [Insights into Cross-Continental Fast Fashion](https://github.com/lijahoffman/fast_fashion). The script fast_fashion_etl_now.ipynb 
+The following is an extension of my contribution to the project [Insights into Cross-Continental Fast Fashion](https://github.com/lijahoffman/fast_fashion). Specifically, it is a modification of the file Fashion_Lija_Update.ipynb found [here](https://github.com/lijahoffman/fast_fashion/blob/main/Fashion_Lija_Update.ipynb) (which retrieves, analyzes, and visualizes data from the RapidAPI ASOS API and the Kaggle Myntra CSV). 
 
-
-Specifically, it is a modification of the file Fashion_Lija_Update.ipynb found [here](https://github.com/lijahoffman/fast_fashion/blob/main/Fashion_Lija_Update.ipynb) (which retrieves, analyzes, and visualizes data from the RapidAPI ASOS API and the Kaggle Myntra CSV). This project highlights the ETL process by extracting data from API and CSV sources, transforming in Pandas, and loading into pgAdmin using PostgreSQL and SQLAlchemy.  
+The following analysis considered the number of inventory items in the Myntra CSV and the number of search results returned using the ASOS API. It highlights the ETL process by extracting data from API and CSV sources, transforming in Pandas, and loading into pgAdmin using PostgreSQL and SQLAlchemy.  
 
 ## Extract 
 1. The [ASOS API](https://rapidapi.com/apidojo/api/asos2/) was used was used to query the v2/auto-complete endpoint, specifying the country, store, and search term.
